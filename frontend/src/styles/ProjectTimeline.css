@@ -1,0 +1,126 @@
+/* Projects.css - Styles matching the dark theme with vibrant accents */
+
+/* ------------------------------------------------------------------- */
+/* 1. SECTION BACKGROUND (The Key to Visual Contrast) */
+/* ------------------------------------------------------------------- */
+
+.projects-section {
+    /* Subtle contrast: Use #212121 to make this section pop slightly 
+       compared to the very dark main body/hero background. */
+    background-color: #212121; 
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+/* Main Heading Style */
+.section-heading-main {
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* ------------------------------------------------------------------- */
+/* 2. PROJECT CARD STYLING */
+/* ------------------------------------------------------------------- */
+
+.project-card {
+    /* Card background is slightly different from section background for depth */
+    background-color: #282828; 
+    border: 1px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    /* Subtle green glow on hover, matching your primary color */
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.2); 
+}
+
+.card-title-custom {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text-custom {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ------------------------------------------------------------------- */
+/* 3. TECHNOLOGY TAGS */
+/* ------------------------------------------------------------------- */
+
+.tech-tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.tag-react {
+    background-color: #00bcd4; /* Light blue (React color) */
+    color: #1a1a1a;
+}
+
+.tag-api {
+    background-color: #ff9900; /* Orange/Amber for important skills */
+    color: #1a1a1a;
+}
+
+.tag-bootstrap {
+    background-color: #7952b3; /* Purple */
+    color: #ffffff;
+}
+
+.tag-basic {
+    background-color: #444; 
+    color: #ccc;
+}
+
+/* ------------------------------------------------------------------- */
+/* 4. BUTTON STYLING */
+/* ------------------------------------------------------------------- */
+
+.card-btn {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.card-btn-github {
+    background-color: #333;
+    border-color: #333;
+    color: #ccc;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.card-btn-github:hover {
+    background-color: #444;
+    border-color: #444;
+    color: #fff;
+}
+
+/* Large CTA Button (for 'View All Projects') - Matches Hero button */
+.cta-button-lg {
+    background-color: #28a745;
+    border-color: #28a745;
+    padding: 12px 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.cta-button-lg:hover {
+    background-color: #1e7e34;
+    border-color: #1e7e34;
+}

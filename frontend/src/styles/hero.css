@@ -1,0 +1,177 @@
+.hero-section {
+  position: relative;
+  margin: 0;
+  padding: 0;
+ width: 100vw !important;
+  max-width: 100% !important;
+  min-height: 60vh; 
+  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);  */
+  background: linear-gradient(180deg, #001a1f, #000);
+
+  color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* .hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); 
+} */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 900px; 
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-title span {
+  color: #ff9800;
+}
+
+.hero-subtitle {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #00ff99; 
+  animation: typing 3.5s steps(50, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Cursor blinking */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00ff99;
+  }
+}
+
+/* Green underline animation */
+.animate-subtitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  background: #00ff99;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.9s ease-in-out;
+}
+
+.animate-subtitle:hover::after,
+.animate-subtitle::after {
+  transform: scaleX(1);
+}
+
+
+/* Overlay */
+/* .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+} */
+
+/* Animated waves */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 200px;
+  background: url("https://cdn.jsdelivr.net/gh/iamshaunjp/waves/wave.svg") repeat-x;
+  animation: wave 10s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.hero-buttons .btn {
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 255, 153, 0);
+}
+
+/* Hire Me Button (already present but keeping for clarity) */
+.hire-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: linear-gradient(90deg, #00ff99, #00ccff);
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.4);
+  transition: all 0.3s ease;
+}
+
+.hire-btn:hover {
+  background: linear-gradient(90deg, #00ccff, #00ff99);
+  color: #fff;
+  box-shadow: 0 0 25px rgba(0, 255, 153, 0.8);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* 🔹 New Resume Button */
+.resume-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  color: #00ff99;
+  border: 2px solid #00ff99;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.3);
+}
+
+.resume-btn:hover {
+  background: #00ff99;
+  color: #000;
+  box-shadow: 0 0 25px rgba(0, 255, 153, 0.8);
+  transform: translateY(-3px) scale(1.05);
+}
+
+
+
